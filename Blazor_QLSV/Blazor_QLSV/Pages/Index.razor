@@ -1,0 +1,47 @@
+﻿@page "/"
+@using AntDesign
+@using AntDesign.Charts
+@using Blazor_QLSV.Models.Entity
+@using Blazor_QLSV.Service
+@using Blazor_QLSV.Service.Interface
+@using Title = AntDesign.Charts.Title
+<PageTitle>Index</PageTitle>
+
+
+<h1>BIỂU ĐỒ</h1>
+
+Tổng Số Sinh Viên là: @TotalStudent
+
+<Tabs>
+    <TabPane Key="1">
+        <TabTemplate>Example 1</TabTemplate>
+        <ChildContent>
+            <Pie Data="data1" Config="config1" />
+        </ChildContent>
+    </TabPane>
+</Tabs>
+
+@code{
+    public PieConfig config1 = new PieConfig
+        {
+            ForceFit = true,
+            Title = new Title
+            {
+                Visible = true,
+                Text = "Multicolor Pie Chart"
+            },
+            Description = new Description
+            {
+                Visible = true,
+                Text = "Specify the color mapping field (colorField), and the pie slice will be displayed in different colors according to the field data. To specify the color, you need to configure the color as an array. \nWhen the pie chart label type is set to inner, the label will be displayed inside the slice. Set the offset value of the offset control label."
+            },
+            Radius = 0.8,
+            AngleField = "value",
+            ColorField = "name",
+            Label = new PieLabelConfig
+            {
+                Visible = true,
+                Type = "inner"
+            }
+        };
+}

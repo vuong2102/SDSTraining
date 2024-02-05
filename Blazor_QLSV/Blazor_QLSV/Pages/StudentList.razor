@@ -1,0 +1,64 @@
+﻿@page "/student-list"
+@using AntDesign
+@using Blazor_QLSV.Models.Entity
+@using Blazor_QLSV.Models.Dto
+@inject NotificationService _notice
+
+<PageTitle>Danh sách sinh viên</PageTitle>
+
+<Title Level="3">Danh sách sinh viên</Title>
+
+<GridRow>
+    <GridCol Span="8">
+        <StudentForm @ref="StudentForm" Clear="Clear"></StudentForm>
+    </GridCol>
+</GridRow>
+
+<br />
+<EditForm Model="@StudentFilter" OnValidSubmit="@OnFinishSearchAsync" OnInvalidSubmit="@OnFinishFailedSearch" @ref="_formSearchList">
+    <Row Gutter="16">
+        <AntDesign.Col Span="6">
+            <Text>Name</Text>
+            <Input @bind-Value="@StudentFilter.Name" id="name" />
+        </AntDesign.Col>
+        <AntDesign.Col Span="6">
+            <Text>Address</Text>
+            <Input @bind-Value="@StudentFilter.Address" id="address" />
+        </AntDesign.Col>
+        <AntDesign.Col Span="6">
+            <Text>Class</Text>
+            <Select @bind-Value="@StudentFilter.ClassId" DataSource="Classes" ValueName="@nameof(Class.ID)" LabelName="@nameof(Class.Subject)" AllowClear></Select>
+         </AntDesign.Col>
+         <AntDesign.Col Span="6">
+             <Button HtmlType="submit" Style="margin-top: 24px;">Search</Button>
+         </AntDesign.Col>
+     </Row>
+     <br />
+
+ </EditForm>
+ <br />
+
+<Table @ref="table" TItem="StudentViewDto" DataSource="@StudentViews" @bind-PageIndex="pageIndex" @bind-PageSize="pageSize" OnChange="OnPagingAsync" Total="total">
+    
+    <Column @bind-Field="context.Stt" Title="STT"></Column>
+    <Column @bind-Field="context.Name" Title="Họ tên"></Column>
+    <Column @bind-Field="context.DateOfBirth" Title="Ngày sinh"></Column>
+    <Column @bind-Field="context.Address" Title="Địa chỉ"></Column>
+    <Column @bind-Field="context.ClassName" Title="Tên lớp"></Column>
+    <ActionColumn Title="Action">
+        <Space Size=@("middle")>
+            <SpaceItem>
+                <Button OnClick="()=>UpdateStudent(context)"><Icon Type="edit" Theme="outline" /></Button>
+            </SpaceItem>
+            <SpaceItem>
+                <Popconfirm Title="Sure to delete?"
+                            OkText="Yes"
+                            CancelText="No"
+                            OnConfirm="()=>DeleteStudent(context)">
+                    <Button><Icon Type="delete" Theme="outline" /></Button>
+                </Popconfirm>
+            </SpaceItem>
+        </Space>
+    </ActionColumn>
+</Table>
+<p>Tổng số sinh viên: @total</p>
