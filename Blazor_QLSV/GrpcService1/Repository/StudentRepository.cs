@@ -25,14 +25,12 @@ namespace GrpcService1.Repository
         }
         public int GenerateID()
         {
-            List<Student> listSV = GetListStudents();
-            int max = 1;
-            if (listSV?.Any() == true)
+            using (var session = _session.OpenSession())
             {
-                max = listSV.Max(p => p.ID);
-                max++;
+                int maxID = session.Query<Student>()
+                           .Max(s => s.ID);
+                return ++maxID;
             }
-            return max;
         }
         public Boolean AddNewStudent(Student student)
         {

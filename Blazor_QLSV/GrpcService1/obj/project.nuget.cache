@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bbhhRbY50/2WnJjda8DJHU4JIlmg6bqkAL99l3Is6Db9O0cTgute/+s8/Pbqhx4rzrQCH7EtRqrSgy/rKm+LJQ==",
+  "dgSpecHash": "4MkzLKg8xf+OV2EpBRuB8FYflPeT9W2jEfy/YocALDbjO2n9uW0ggSaig0K8yf6bqZ3O9QH3IpweKz75bZabJQ==",
   "success": true,
   "projectFilePath": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\GrpcService1\\GrpcService1.csproj",
   "expectedPackageFiles": [
@@ -122,7 +122,11 @@
     "C:\\Users\\user\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
   ],
   "logs": [
     {
