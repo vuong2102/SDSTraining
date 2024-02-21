@@ -10,6 +10,7 @@ namespace GrpcService1
 {
     public class NHibernateConfig
     {
+        private static ISessionFactory _sessionFactory;
         public static ISessionFactory BuildSessionFactory()
         {
             var cfg = new Configuration();
@@ -27,7 +28,16 @@ namespace GrpcService1
             mapper.AddMapping(typeof(ClassMapping));
             HbmMapping domainMapping = mapper.CompileMappingForAllExplicitlyAddedEntities();
             cfg.AddMapping(domainMapping);
-            return cfg.BuildSessionFactory();
+            _sessionFactory = cfg.BuildSessionFactory();
+            return _sessionFactory;
+        }
+        public static IStatelessSession OpenStatelessSession()
+        {
+            return _sessionFactory.OpenStatelessSession();
+        }
+        public static NHibernate.ISession OpenSession()
+        {
+            return _sessionFactory.OpenSession();
         }
     }
 }

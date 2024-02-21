@@ -3,6 +3,7 @@ using GrpcService1.Models.Mapper;
 using GrpcService1.Repository.Interface;
 using ProtoBuf.Grpc;
 using Share;
+using static GrpcService1.Repository.StudentRepository;
 
 namespace GrpcService1.Services
 {
@@ -18,25 +19,23 @@ namespace GrpcService1.Services
             _logger = logger;
             _studentRepository = studentRepository;
         }
-        public int GenerateID()
-        {
-            List<Student> listSV = _studentRepository.GetListStudents();
-            int max = 1;
-            if (listSV?.Any() == true)
-            {
-                max = listSV.Max(p => p.ID);
-                max++;
-            }
-            return max;
-        }
         public BooleanGrpc AddNewStudent(StudentGrpc request, CallContext context = default)
         {
             Student student = studentMapper.ClassGrpcToClass(request);
             BooleanGrpc booleanGrpc = new BooleanGrpc();
             booleanGrpc.Empty = new Empty();
-            booleanGrpc.Result = _studentRepository.AddNewStudent(student);
+            booleanGrpc.Result = _studentRepository.InsertStudent(student);
             return booleanGrpc;
         }
+        public BooleanGrpc UpdateStudent(StudentGrpc request, CallContext context = default)
+        {
+            Student student = studentMapper.ClassGrpcToClass(request);
+            BooleanGrpc booleanGrpc = new BooleanGrpc();
+            booleanGrpc.Empty = new Empty();
+            booleanGrpc.Result = _studentRepository.UpdateStudent(student);
+            return booleanGrpc;
+        }
+
         public BooleanGrpc DeleteStudent(StudentGrpc request, CallContext context = default)
         {
             Student student = studentMapper.ClassGrpcToClass(request);
@@ -101,16 +100,6 @@ namespace GrpcService1.Services
                 throw;
             }
         }
-
-        public BooleanGrpc UpdateStudent(StudentGrpc request, CallContext context = default)
-        {
-            Student student = studentMapper.ClassGrpcToClass(request);
-            BooleanGrpc booleanGrpc = new BooleanGrpc();
-            booleanGrpc.Empty = new Empty();
-            booleanGrpc.Result = _studentRepository.UpdateStudentInfor(student);
-            return booleanGrpc;
-        }
-
         private StudentFilter MapGrpcToStudentFilter(StudentFilterGrpc studentFilterGrpc)
         {
             var filter = new StudentFilter();

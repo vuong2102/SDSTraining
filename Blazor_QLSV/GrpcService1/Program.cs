@@ -4,6 +4,7 @@ using GrpcService1.Services;
 using GrpcService1;
 using NHibernate;
 using ProtoBuf.Grpc.Server;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
