@@ -3,6 +3,7 @@ using GrpcService1.Models.Mapping;
 using NHibernate.Cfg.MappingSchema;
 using NHibernate.Mapping.ByCode;
 using NHibernate;
+using NHibernate.Cfg;
 using Configuration = NHibernate.Cfg.Configuration;
 using NHibernate.Dialect;
 using NHibernate.Driver;

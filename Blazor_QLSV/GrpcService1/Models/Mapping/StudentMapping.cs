@@ -1,4 +1,5 @@
 ﻿using GrpcService1.Models.Entity;
+using NHibernate.Mapping.ByCode;
 using NHibernate.Mapping.ByCode.Conformist;
 
 namespace GrpcService1.Models.Dto
@@ -9,7 +10,10 @@ namespace GrpcService1.Models.Dto
         {
 
             Table("Student");
-            Id(p => p.ID, map => map.Column("ID"));
+            Id(p => p.ID, map => {
+                map.Column("ID");
+                map.Generator(Generators.Identity); // Sử dụng generator identity
+            });
             Property(p => p.Name);
             Property(p => p.DateOfBirth);
             Property(p => p.Address);

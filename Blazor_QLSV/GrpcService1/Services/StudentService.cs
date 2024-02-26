@@ -24,7 +24,7 @@ namespace GrpcService1.Services
             Student student = studentMapper.ClassGrpcToClass(request);
             BooleanGrpc booleanGrpc = new BooleanGrpc();
             booleanGrpc.Empty = new Empty();
-            booleanGrpc.Result = _studentRepository.InsertStudent(student);
+            booleanGrpc.Result = _studentRepository.SaveOrUpdateStudent(student);
             return booleanGrpc;
         }
         public BooleanGrpc UpdateStudent(StudentGrpc request, CallContext context = default)

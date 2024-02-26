@@ -24,16 +24,16 @@ namespace GrpcService1.Repository
         public List<Student> GetListStudents()
         {
             List<Student> students = new List<Student>();
-            return session.Query<Student>()
+            return statelessSession.Query<Student>()
                     .Fetch(s => s.Class)
                     .ToList();
         }
-        public int GenerateID()
+/*        public int GenerateID()
         {
             int maxID = statelessSession.Query<Student>()
                      .Max(s => s.ID);
             return ++maxID;
-        }
+        }*/
         public Student FindStudentById(int id)
         {
             var student = statelessSession.Query<Student>()
@@ -44,16 +44,16 @@ namespace GrpcService1.Repository
         }
         public Boolean RemoveStudent(Student student)
         {
-            using (var transaction = statelessSession.BeginTransaction())
+            using (var transaction = session.BeginTransaction())
             {
                 try
                 {
                     // Lấy sinh viên cần xóa từ cơ sở dữ liệu
-                    var studentToRemove = statelessSession.Get<Student>(student.ID);
+                    var studentToRemove = session.Get<Student>(student.ID);
                     if (studentToRemove != null)
                     {
                         // Xóa sinh viên khỏi cơ sở dữ liệu
-                        statelessSession.Delete(studentToRemove);
+                        session.Delete(studentToRemove);
 
                         // Commit giao dịch
                         transaction.Commit();
@@ -73,13 +73,12 @@ namespace GrpcService1.Repository
             }
         }   
         //Chi ket hop dc khi dung Session
-        public Boolean SaveOrUpdateStudent(Student student )
+        public Boolean SaveOrUpdateStudent(Student student)
         {
                 using (var transaction = session.BeginTransaction())
                 {
                     try
                     {
-                        if(student.ID==0) student.ID = GenerateID();
                         session.SaveOrUpdate(student);
                         transaction.Commit();
                         return true;
@@ -95,12 +94,11 @@ namespace GrpcService1.Repository
         }
         public Boolean InsertStudent(Student student)
         {
-                using (var transaction = statelessSession.BeginTransaction())
+                using (var transaction = session.BeginTransaction())
                 {
                     try
                     {
-                        student.ID = GenerateID();
-                        statelessSession.Insert(student);
+                        session.Save(student);
                         transaction.Commit();
                         return true;
                     }
@@ -115,11 +113,11 @@ namespace GrpcService1.Repository
         }
         public Boolean UpdateStudent(Student student)
         {
-            using (var transaction = statelessSession.BeginTransaction())
+            using (var transaction = session.BeginTransaction())
             {
                 try
                 {
-                    statelessSession.Update(student);
+                    session.Update(student);
                     transaction.Commit();
                     return true;
                 }
