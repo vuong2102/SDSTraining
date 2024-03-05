@@ -16,23 +16,25 @@ namespace Blazor_QLSV.Pages
         [Inject] IStudentService studentService { get; set; }
         protected override async Task OnInitializedAsync()
         {
+            await LoadDataAsync();
+        }
+        private async Task LoadDataAsync()
+        {
             classes = classService.GetAllClasses();
             students = studentService.GetAllStudents();
             int TotalClass = classes.Count;
             data1 = new object[TotalClass];
             for (int i = 0; i < TotalClass; i++)
             {
-                int res = classes[i].ID;
-                string nameData = classes[i].Subject;
-                int valueData = students.Count(x => x.Class.ID == res);
+                int valueData = students.Count(x => x.Class.ID == classes[i].ID);
                 if (valueData == 0) continue;
                 data1[i] = new
                 {
-                    name = nameData,
+                    name = classes[i].Subject,
                     value = valueData
                 };
             }
             TotalStudent = students.Count();
-        } 
+        }
     }
 }

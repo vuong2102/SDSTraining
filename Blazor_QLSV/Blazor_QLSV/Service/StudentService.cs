@@ -34,7 +34,6 @@ namespace Blazor_QLSV.Service
                 throw;
             }
         }
-
         public bool DeleteStudent(Student student)
         {
             try
@@ -74,12 +73,6 @@ namespace Blazor_QLSV.Service
                 throw;
             }
 
-        }
-
-        public int GetIdNewStudent()
-        {
-            var student = GetAllStudents().OrderByDescending(x => x.ID).First();
-            return student.ID + 1;
         }
         public Student GetStudentById(int id)
         {

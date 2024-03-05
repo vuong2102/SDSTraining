@@ -38,8 +38,6 @@ namespace Blazor_QLSV.Service.Interface
         /// Hàm lấy ra sinh viên theo Id
         /// </summary>
         public Student GetStudentById(int id);
-
-        public int GetIdNewStudent();
         Task<PageView<Student>> GetDataPageAsync(int pageNumber, int pageSize, StudentFilter studentFilter);
     }
 }

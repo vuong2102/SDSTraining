@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WccdvaZYeWs94FYKaFIv8Jrffou6TVJK2Vmn5CwRgP4=",
+  "Hash": "1C2HI5He+3M7fIJF93VtIyqQsih7wQfMclGdbM7w8gY=",
   "Source": "Blazor_QLSV",
   "BasePath": "_content/Blazor_QLSV",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Blazor_QLSV\\wwwroot",
       "Source": "Blazor_QLSV",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "Pattern": "**"
     }
@@ -7142,10 +7142,10 @@
       "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\antdesign\\0.17.4\\staticwebassets\\less\\upload\\style\\rtl.less"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\jsmodules\\jsmodules.build.manifest.json",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\jsmodules\\jsmodules.build.manifest.json",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\jsmodules\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\jsmodules\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "Blazor_QLSV.modules.json",
       "AssetKind": "Build",
@@ -7161,10 +7161,10 @@
       "OriginalItemSpec": "obj\\Debug\\net6.0\\jsmodules\\jsmodules.build.manifest.json"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Blazor_QLSV.styles.css",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Blazor_QLSV.styles.css",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "Blazor_QLSV.styles.css",
       "AssetKind": "All",
@@ -7177,13 +7177,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Blazor_QLSV.styles.css"
+      "OriginalItemSpec": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Blazor_QLSV.styles.css"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Blazor_QLSV.bundle.scp.css",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Blazor_QLSV.bundle.scp.css",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "Blazor_QLSV.bundle.scp.css",
       "AssetKind": "All",
@@ -7196,13 +7196,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Blazor_QLSV.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Blazor_QLSV.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -7218,10 +7218,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -7237,10 +7237,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -7256,10 +7256,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -7275,10 +7275,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -7294,10 +7294,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -7313,10 +7313,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -7332,10 +7332,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -7351,10 +7351,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -7370,10 +7370,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -7389,10 +7389,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -7408,10 +7408,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\css\\site.css",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -7427,10 +7427,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\favicon.ico",
       "SourceId": "Blazor_QLSV",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\Final\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
+      "ContentRoot": "D:\\Code\\Frame_work\\.NET\\SDSTraining\\Blazor_QLSV\\Blazor_QLSV\\wwwroot\\",
       "BasePath": "_content/Blazor_QLSV",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
