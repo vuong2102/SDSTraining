@@ -56,13 +56,13 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
-            "NHibernate": {
-              "target": "Package",
-              "version": "[5.5.0, )"
-            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.15, )"
             },
             "protobuf-net.Grpc.AspNetCore": {
               "target": "Package",

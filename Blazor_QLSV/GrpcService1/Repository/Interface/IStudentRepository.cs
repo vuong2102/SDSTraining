@@ -1,4 +1,6 @@
 ﻿using GrpcService1.Models.Entity;
+using NHibernate;
+using NHibernate.SqlCommand;
 using static GrpcService1.Repository.StudentRepository;
 
 namespace GrpcService1.Repository.Interface

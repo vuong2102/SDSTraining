@@ -7,6 +7,14 @@
       "applicationUrl": "http://localhost:5295;https://localhost:7154",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "Logging": {
+        "LogLevel": {
+          "Default": "Information",
+          "Microsoft.AspNetCore": "Warning",
+          "Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware": "Information",
+          "Microsoft.Hosting.Lifetime": "Information"
+        }
       }
     }
   }

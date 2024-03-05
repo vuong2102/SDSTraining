@@ -1,4 +1,5 @@
 ﻿using GrpcService1.Models.Entity;
+using NHibernate;
 using NHibernate.Mapping.ByCode;
 using NHibernate.Mapping.ByCode.Conformist;
 
@@ -10,6 +11,8 @@ namespace GrpcService1.Models.Dto
         {
 
             Table("Student");
+            SelectBeforeUpdate(true);
+            DynamicUpdate(true);
             Id(p => p.ID, map => {
                 map.Column("ID");
                 map.Generator(Generators.Identity); // Sử dụng generator identity

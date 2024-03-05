@@ -1,9 +1,17 @@
-﻿using GrpcService1.Models.Entity;
+﻿using FluentNHibernate.Utils;
+using GrpcService1.Models.Entity;
 using GrpcService1.Repository.Interface;
+using log4net;
 using NHibernate;
 using NHibernate.Cfg;
+using NHibernate.Engine;
 using NHibernate.Linq;
+using NHibernate.Mapping.ByCode;
+using NHibernate.Engine;
+using NHibernate.SqlCommand;
 using ISession = NHibernate.ISession;
+using NHibernate.Event;
+using Grpc.Core.Interceptors;
 
 namespace GrpcService1.Repository
 {
@@ -28,12 +36,6 @@ namespace GrpcService1.Repository
                     .Fetch(s => s.Class)
                     .ToList();
         }
-/*        public int GenerateID()
-        {
-            int maxID = statelessSession.Query<Student>()
-                     .Max(s => s.ID);
-            return ++maxID;
-        }*/
         public Student FindStudentById(int id)
         {
             var student = statelessSession.Query<Student>()
@@ -119,6 +121,7 @@ namespace GrpcService1.Repository
                 {
                     session.Update(student);
                     transaction.Commit();
+
                     return true;
                 }
                 catch (Exception ex)
@@ -131,7 +134,7 @@ namespace GrpcService1.Repository
         }
         public List<Student> SortData()
         {
-                return session.Query<Student>()
+                return statelessSession.Query<Student>()
                     .Fetch(s => s.Class)
                     .OrderBy(x => x.Name)
                     .ThenByDescending(x => x.DateOfBirth)
@@ -178,6 +181,11 @@ namespace GrpcService1.Repository
                 query = query.Where(student => student.ID == studentFilter.Id);
             }
             return query;
+        }
+
+        public SqlString OnPrepareStatement(SqlString sql)
+        {
+            throw new NotImplementedException();
         }
     }
 }
